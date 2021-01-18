@@ -1,0 +1,61 @@
+/*
+ * Copyright (c) 2012-2018 Augumenta Ltd. All rights reserved.
+ *
+ * This source code file is furnished under a limited license and may be used or
+ * copied only in accordance with the terms of the license. Except as permitted
+ * by the license, no part of this source code file may be  reproduced, stored in
+ * a retrieval system, or transmitted, in any form or by  any means, electronic,
+ * mechanical, recording, or otherwise, without the prior written permission of
+ * Augumenta.
+ *
+ * This source code file contains proprietary information that is protected by
+ * copyright. Certain parts of proprietary information is patent protected. The
+ * content herein is furnished for informational use only, is subject to change
+ * without notice, and should not be construed as a commitment by Augumenta.
+ * Augumenta assumes no responsibility or liability for any errors or
+ * inaccuracies that may appear in the informational content contained herein.
+ * This source code file has not been thoroughly tested under all conditions.
+ * Augumenta, therefore, does not guarantee or imply its reliability,
+ * serviceability, or function.
+ *
+ */
+
+apply plugin: 'com.android.application'
+
+repositories {
+	flatDir {
+		dirs file('libs')
+	}
+}
+
+android {
+	// compileSdkVersion "Google Inc.:Glass Development Kit Preview:19"
+	compileSdkVersion 29
+	defaultConfig {
+		applicationId 'com.augumenta.examples.swipe'
+		minSdkVersion 21
+		targetSdkVersion 29
+		versionCode 2
+		versionName "2.0"
+	}
+	buildTypes {
+		release {
+			minifyEnabled true
+			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+		}
+	}
+	productFlavors {
+	}
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_8
+		targetCompatibility JavaVersion.VERSION_1_8
+	}
+}
+
+dependencies {
+	implementation project(':agapi')
+	// Required AndroidX libraries
+	implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+	implementation 'androidx.appcompat:appcompat:1.2.0'
+	implementation 'androidx.viewpager2:viewpager2:1.0.0'
+}

@@ -1,0 +1,49 @@
+<!--
+  ~ Copyright (c) 2012-2018 Augumenta Ltd. All rights reserved.
+  ~
+  ~ This source code file is furnished under a limited license and may be used or
+  ~ copied only in accordance with the terms of the license. Except as permitted
+  ~ by the license, no part of this source code file may be  reproduced, stored in
+  ~ a retrieval system, or transmitted, in any form or by  any means, electronic,
+  ~ mechanical, recording, or otherwise, without the prior written permission of
+  ~ Augumenta.
+  ~
+  ~ This source code file contains proprietary information that is protected by
+  ~ copyright. Certain parts of proprietary information is patent protected. The
+  ~ content herein is furnished for informational use only, is subject to change
+  ~ without notice, and should not be construed as a commitment by Augumenta.
+  ~ Augumenta assumes no responsibility or liability for any errors or
+  ~ inaccuracies that may appear in the informational content contained herein.
+  ~ This source code file has not been thoroughly tested under all conditions.
+  ~ Augumenta, therefore, does not guarantee or imply its reliability,
+  ~ serviceability, or function.
+  ~
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".SwipeActivity$PlaceholderFragment">
+
+	<TextView
+		android:text="@string/swipe_info"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:textSize="28sp"/>
+
+    <TextView
+	    android:id="@+id/page_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+	    android:textSize="42sp"
+	    android:textStyle="bold"/>
+
+</RelativeLayout>
