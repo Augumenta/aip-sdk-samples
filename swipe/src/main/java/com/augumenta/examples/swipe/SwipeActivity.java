@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012-2018 Augumenta Ltd. All rights reserved.
+ * Copyright (c) 2012-2021 Augumenta Ltd. All rights reserved.
  *
  * This source code file is furnished under a limited license and may be used or
  * copied only in accordance with the terms of the license. Except as permitted
